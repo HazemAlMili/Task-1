@@ -1,3 +1,33 @@
+/* Start Variables */
+:root {
+    --button-color: #222;
+    --background-color: #f5f5f5;
+    --font-color: #000;
+}
+
+/* End Variables */
+
+/* Reset Styles */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* Start Global Rules */
 * {
     box-sizing: border-box;
@@ -46,4 +76,3 @@ html {
 }
 
 /* Start Components */
-

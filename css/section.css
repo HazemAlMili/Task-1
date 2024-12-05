@@ -52,23 +52,25 @@ section .container .sub-title {
     color: #595656;
 }
 
-@media (max-width:769px) {
+
+
+@media (max-width:576px) {
     section .container .videos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        /* تصغير الفجوة بين العناصر */
     }
-}
 
-@media (max-width:992px) {
-    section .container .videos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    section .container .video-image {
+        width: 100%;
+        /* اجعل الصور مرنة */
     }
-}
 
-@media (min-width:992px) {
-    section .container .videos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    section .container .channel-image {
+        top: 200px;
+        /* تعديل موضع الصورة بناءً على حجم الفيديو */
+        left: 90%;
+        /* ضبط تمركزها */
     }
 }
