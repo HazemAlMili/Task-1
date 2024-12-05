@@ -1,0 +1,139 @@
+/* start var */
+:root {
+    --button-color: #222222;
+}
+
+/* end var */
+
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+header .container::before {
+    content: "";
+    height: 1px;
+    background-color: var(--button-color);
+    width: 97%;
+    color: var(--button-color);
+    position: absolute;
+    top: 80px;
+    left: 24px;
+    
+}
+
+header .container img {
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: -60px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+header .container .head-button {
+    position: relative;
+    width: 750px;
+}
+
+header .container .head-button button {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--button-color);
+    cursor: pointer;
+    color: white;
+}
+
+header .container .head-button input {
+    padding: 7px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 60%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: right;
+    cursor: text;
+    outline: none;
+    border: 1.5px solid;
+}
+
+header .container .head-button input:focus {
+    border: 1.5px solid blue;
+}
+
+header .container .head-button button:first-child {
+    position: absolute;
+    background-color: var(--button-color);
+    left: 44%;
+    top: 20%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 35px;
+    width: 50px;
+
+}
+
+header .container .head-button button:nth-child(2) {
+    border-radius: 50%;
+    position: absolute;
+    left: -60px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+header .container .head-button button:nth-child(3) {
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+header .container .head-button button:nth-child(4) {
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+header .container .head-button a {
+    position: absolute;
+    right: -300px;
+    color: red;
+    font-size: 35px;
+    top: 10px;
+    text-decoration: none;
+    padding-left: 0;
+
+}
+
+header .container .head-button a p {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    letter-spacing: -3px;
+    font-weight: bold;
+}
+

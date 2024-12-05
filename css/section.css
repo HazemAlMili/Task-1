@@ -1,0 +1,74 @@
+/* start var */
+:root {
+    --button-color: #222222;
+}
+
+/* end var */
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+section .container {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+section .container .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    gap: 20px;
+
+}
+
+section .container .video-image {
+    width: 350px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+section .container .video-image:hover {
+    border-radius: 0px;
+}
+
+section .container .channel-image {
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 240px;
+    left: 320px;
+}
+
+section .container a {
+    text-decoration: none;
+    color: black;
+}
+
+section .container .sub-title {
+    color: #595656;
+}
+
+@media (max-width:769px) {
+    section .container .videos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:992px) {
+    section .container .videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:992px) {
+    section .container .videos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
