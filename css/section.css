@@ -4,6 +4,7 @@
 }
 
 /* end var */
+
 section {
     margin: 0;
     padding: 0;
@@ -22,7 +23,6 @@ section .container .videos {
     grid-template-columns: repeat(3, 1fr);
     margin: 10px;
     gap: 20px;
-
 }
 
 section .container .video-image {
@@ -52,25 +52,66 @@ section .container .sub-title {
     color: #595656;
 }
 
-
-
-@media (max-width:576px) {
+@media (max-width: 576px) {
     section .container .videos {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-        /* تصغير الفجوة بين العناصر */
     }
 
     section .container .video-image {
         width: 100%;
-        /* اجعل الصور مرنة */
     }
 
     section .container .channel-image {
         top: 200px;
-        /* تعديل موضع الصورة بناءً على حجم الفيديو */
         left: 90%;
-        /* ضبط تمركزها */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    section .container .videos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    section .container .video-image {
+        width: 100%;
+    }
+
+    section .container .channel-image {
+        top: 200px;
+        left: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    section .container .videos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    section .container .video-image {
+        width: 100%;
+    }
+
+    section .container .channel-image {
+        top: 220px;
+        left: 85%;
+    }
+}
+
+@media (min-width: 993px) {
+    section .container .videos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    section .container .video-image {
+        width: 100%;
+    }
+
+    section .container .channel-image {
+        top: 240px;
+        left: 90%;
     }
 }
